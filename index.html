@@ -1,2 +1,156 @@
-<p>Jyoti Ghanghoriya- This is my landing page</p>
-<p>Website Under Construction</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jyoti Ghanghoriya</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="style.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+
+
+<!-- Tracking code -->
+</head>
+
+<body onload="start()">
+
+<div id="header" class="bg1">
+  <div id="headerblob">
+    <img src="me2.jpg" class="img-circle imgme">
+    <div id="headertext">
+      <div id="htname">Jyoti Ghanghoriya</div>
+      <div id="htdesc">Associated DevOps Engineer, SAP Labs</div>
+      <div id="htem">ghanghoriya.jyoti@gmail.com, jyoti.ghanghoriya1202@gmail.com</div>
+      <div id="icons">
+        <div class="svgico">
+          <a href="https://twitter.com/ghanghoriyajyo1"><img src="icons/03-twitter.svg"></a>
+        </div>
+        <div class="svgico">
+          <a href="https://www.linkedin.com/in/jyoti-ghanghoriya-006388ab/"><img src="icons/linkedin2.svg"></a>
+        </div>
+        <div class="svgico">
+          <a href="https://github.com/jyotighanghoriya"><img src="icons/octocat.svg" width="56px"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container" style="font-size:18px; font-weight:300;margin-top:50px;margin-bottom:50px;">
+
+	
+	
+	
+	
+  <b>Bio</b>: 
+<p>Under Constuction</p>
+  <b>Timeline</b>.
+ 
+  <br>
+  <span class="t2when">2018 - Present:</span>
+  <span class="t2who">Associated DevOps Engineer at <b>SAP Labs India</b></span>
+  <span class="t2what">Work for SAP's Successfactors</span>
+
+  <br>
+  <span class="t2when">2014-2018:</span>
+  <span class="t2who">SGSITS: BE</span>
+  <span class="t2what">Majors in Computer Science Engineeriing</span>
+
+</div>
+
+<hr class="soft">
+<hr class="soft">
+
+<div class="container">
+  <h2>Publication & Certifications</h2>
+  <div id="pubs">
+    <div class="pubwrap">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="pubimg">
+            <img src="genetic.png">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="pub">
+            <div class="pubt">Genetic Algorithm for solving the Travelling Salesman problem using Neighbour-Based Constructive Crossover Operator</div>
+            <div class="pubd">The proposed
+crossover operator uses the better edges present in parents’ structure by comparing the neighboring nodes of a
+node in order to generate off-springs. The efficacy of the proposed crossover operator, NCX is set against two
+other crossover operators, single point crossover (SPCX) and sequential constructive crossover (SCX)  for
+several standard TSPLIB instances. Empirical results and observations illustrate that the new crossover
+operator is better than the SPCX and SCX in terms of quality of solutions.</div>
+            <div class="puba">Akshay Vyas, Dashmeet Kaur Chawla, Anuj Bhai Mehta, Abhishek Chelawat, Dr. Urjita Thakar5</div>
+            <div class="pubv">IJESRT, 2018</div>
+            <div class="publ">
+              <ul>
+                <li><a href="http://www.ijesrt.com/issues%20pdf%20file/Archive-2018/April-2018/16.pdf">PDF</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="pubwrap">
+      <div class="pubd" style="display:inline-block"><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/QE3YW2GPRD4P">[LINK]</a> Deep Learning Specialization,</div>
+      <div class="puba" style="display:inline-block">deeplearning.ai, Coursera,</div>
+      <div class="pubv" style="display:inline-block">May, 2020</div>
+			<br><br>
+      <div class="pubd" style="display:inline-block"><a href="https://www.coursera.org/account/accomplishments/verify/2DAHEBGN3JU9">[LINK]</a> Data Driven Astronomy,</div>
+      <div class="puba" style="display:inline-block">The University of Sydney, Coursera, </div>
+      <div class="pubv" style="display:inline-block">Feb, 2019</div>
+      <br><br>
+      <div class="pubd" style="display:inline-block"><a href="https://open.sap.com/verify/xigos-lymen-mydeg-zyryh-cenik">[LINK]</a> Developing Web Apps with SAPUI5,</div>
+      <div class="puba" style="display:inline-block">openSAP, </div>
+      <div class="pubv" style="display:inline-block">Aug, 2018</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- place js at end for faster loading -->
+<script src="jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+
+var more_projects_shown = false;
+function start() {
+  $("#showmoreprojects").click(function() {
+    if(!more_projects_shown) {
+      $("#moreprojects").slideDown('fast', function() {
+        $("#showmoreprojects").text('hide');
+      });
+      more_projects_shown = true;
+    } else {
+      $("#moreprojects").slideUp('fast', function() {
+        $("#showmoreprojects").text('show more');
+      });
+      more_projects_shown = false;
+    }
+  });
+
+  var more_pubs_shown = false;
+  $("#showmorepubs").click(function() {
+    if(!more_pubs_shown) {
+      $("#morepubs").slideDown('fast', function() {
+        $("#showmorepubs").text('hide');
+      });
+      more_pubs_shown = true;
+    } else {
+      $("#morepubs").slideUp('fast', function() {
+        $("#showmorepubs").text('show more');
+      });
+      more_pubs_shown = false;
+    }
+  });
+
+}
+
+</script>
+
+</body>
+</html>
