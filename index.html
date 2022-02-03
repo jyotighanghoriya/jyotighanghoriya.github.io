@@ -13,7 +13,7 @@
 <!-- Tracking code -->
 </head>
 
-<body onload="start()">
+<body>
 
 <div id="header" class="bg1">
   <div id="headerblob">
@@ -108,42 +108,5 @@
 <!-- place js at end for faster loading -->
 <script src="jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script>
-
-var more_projects_shown = false;
-function start() {
-  $("#showmoreprojects").click(function() {
-    if(!more_projects_shown) {
-      $("#moreprojects").slideDown('fast', function() {
-        $("#showmoreprojects").text('hide');
-      });
-      more_projects_shown = true;
-    } else {
-      $("#moreprojects").slideUp('fast', function() {
-        $("#showmoreprojects").text('show more');
-      });
-      more_projects_shown = false;
-    }
-  });
-
-  var more_pubs_shown = false;
-  $("#showmorepubs").click(function() {
-    if(!more_pubs_shown) {
-      $("#morepubs").slideDown('fast', function() {
-        $("#showmorepubs").text('hide');
-      });
-      more_pubs_shown = true;
-    } else {
-      $("#morepubs").slideUp('fast', function() {
-        $("#showmorepubs").text('show more');
-      });
-      more_pubs_shown = false;
-    }
-  });
-
-}
-
-</script>
-
 </body>
 </html>
