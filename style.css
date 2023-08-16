@@ -1529,7 +1529,7 @@ button{
 .main-title {
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
-  text-align: center;
+  text-align: left;
 }
 
 .main-title h2 {
