@@ -1260,6 +1260,9 @@ section {
   padding-top: 3.5rem;
   font-family: teko;
   letter-spacing: 1.2px;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
 }
 
 .contact-content-con .left-contact {
