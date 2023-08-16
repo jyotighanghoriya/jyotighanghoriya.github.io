@@ -186,7 +186,7 @@ p.intro {
 }
 
 .header-content .left-header .image {
-  -webkit-transform: translateX(-120%) scale(0);
+  -webkit-transform: translateX(-120%) scale(0.75);
   transform: translateX(-120%) scale(0.75);
   -webkit-animation: slideImg 1s ease-in-out forwards;
   animation: slideImg 1s ease-in-out forwards;
