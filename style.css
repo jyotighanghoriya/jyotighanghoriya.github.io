@@ -186,6 +186,8 @@ p.intro {
 }
 
 .header-content .left-header .image {
+  width: 200px; /* Set your desired width */
+  height: 150px; /* Set your desired height */
   -webkit-transform: translateX(-120%) scale(0.75);
   transform: translateX(-120%) scale(0.75);
   -webkit-animation: slideImg 1s ease-in-out forwards;
