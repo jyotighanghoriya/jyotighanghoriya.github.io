@@ -122,14 +122,13 @@
   }
 }
 
-.name .span {
-  opacity: 0;
-  -webkit-transform: translateY(10px);
-  transform: translateY(10px);
-  -webkit-animation: slide 2s ease forwards;
-  animation: slide 2s ease forwards;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+.name .span.loader {
+  display: inline-block; /* Add this line to ensure content displays in a single line */
+  opacity: 1; /* Set opacity to 1 to ensure content is fully visible */
+  -webkit-transform: translateY(0); /* Set translateY to 0 to prevent shifting */
+  transform: translateY(0); /* Set translateY to 0 to prevent shifting */
+  -webkit-animation: none; /* Remove the animation */
+  animation: none; /* Remove the animation */
 }
 
 .name p {
