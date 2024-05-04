@@ -40,7 +40,7 @@
 
 @-webkit-keyframes loading {
   to {
-    text-shadow: 20px 0 70px var(--particle);
+    text-shadow: 0 0 0 var(--particle);
     color: var(--particle);
   }
 }
